@@ -7,7 +7,7 @@ export default function TopHeader() {
       <p className="text-center text-[1.3em] w-full md:w-auto md:flex-1 md:text-center">
         Limited time offer, Buy XTRA WordPress theme only <span className="font-bold">$37</span>
       </p>
-      <button className="bg-primaryColor hover:bg-green-600 text-black font-medium px-6 py-1.5 rounded ml-4">
+      <button className="bg-primaryColor text-black font-medium px-6 py-1.5 rounded ml-4">
         Download XTRA Theme
       </button>
     </div>
