@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from "../assets/images/logo-watch-shop.png"
 import { FaTwitter, FaInstagram, FaPinterest } from 'react-icons/fa'
 function Footer() {
