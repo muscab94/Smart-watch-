@@ -6,6 +6,7 @@ import Collection from "./Page/Collection"
 import Watches from "./Page/Watches"
 import Quick from "./Page/Quick"
 import Pages from "./Page/pages"
+import Footer from "./Components/Footer"
 
 function App(){
   return <div>
@@ -19,7 +20,7 @@ function App(){
       <Route path="/Quick" element={<Quick/>}/> 
       <Route path="/Pages" element={<Pages/>}/>   
     </Routes>
-    
+    <Footer />
   </div>
 }
 export default App

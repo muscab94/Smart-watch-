@@ -1,6 +1,8 @@
+import Products from "../Components/Products"
+
 function Watches(){
     return <div>
-        <h1>Watches</h1>
+        <Products />
     </div>
 }
 
