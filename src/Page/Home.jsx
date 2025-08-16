@@ -2,6 +2,7 @@
 
 import SectionFive from "../Components/sectionFive";
 import SectionFour from "../Components/sectionFour";
+import SectionFour2 from "../Components/SectionFour2";
 import SectionOne from "../Components/sectionOne";
 import SectionThree from "../Components/sectionThree";
 
@@ -14,7 +15,8 @@ function Home() {
     <SectionTwo/>
     
     <SectionThree/>
-    <SectionFour/>
+    {/* <SectionFour/> */}
+    <SectionFour2 />
     <SectionFive/>
 
     </div>
