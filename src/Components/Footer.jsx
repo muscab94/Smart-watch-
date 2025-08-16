@@ -3,7 +3,7 @@ import { FaTwitter, FaInstagram, FaPinterest } from 'react-icons/fa'
 function Footer() {
   return (
     <footer className='bg-black/10 rounded-t-[50px] sm:p-14  max-sm:p-5  flex gap-5 justify-between 
-    max-sm:flex-col'>
+    max-sm:flex-col mt-16'>
         <div className='basis-[44%]'>
             <img src={logo} alt="" className='w-48 mb-5' />
             <p className='text-lg mb-5'>
