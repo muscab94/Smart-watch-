@@ -9,7 +9,6 @@ function Products() {
     const fetchData = async () => {
         axios.get("https://my-json-server.typicode.com/omm-coder/watches-api/watches")
         .then(res => {
-            console.log(res.data)
             setData(res.data);
         })
         

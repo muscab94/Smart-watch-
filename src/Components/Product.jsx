@@ -1,7 +1,10 @@
-import React from 'react'
+import { addToCart } from '../redux/reducer/cart';
+import React, { useState } from 'react'
 import { FaStar} from 'react-icons/fa'
 import { FaRegStar } from 'react-icons/fa'
-import {FaShoppingCart} from 'react-icons/fa'
+import {FaShoppingCart, FaCheck} from 'react-icons/fa'
+import { useDispatch } from 'react-redux';
+
 
 
 function Rate({rate}) {
@@ -35,6 +38,14 @@ function Rate({rate}) {
 
 
 function Product({product}) {
+    const [isOrdered, setIsorder] = useState(false);
+    const dispatch = useDispatch();
+
+    const handleCLick = () => {
+        setIsorder(!isOrdered);
+
+        dispatch(addToCart(product))
+    }
   return (
     <div className='flex flex-col justify-center items-center border-2 border-gray-200 
     rounded-3xl shadow-md'>
@@ -52,8 +63,15 @@ function Product({product}) {
             <h4 className='font-bold text-lg mb-2'>${product.price}</h4>
         </div>
         <button className='py-2 flex gap-2 justify-center items-center rounded-3xl bg-blue text-white 
-        hover:bg-black mb-2 w-48 text-xl'>
-            <FaShoppingCart /> Add To Cart
+        hover:bg-black mb-2 w-48 text-xl'
+        onClick={handleCLick}>
+           {
+                isOrdered ? <FaCheck /> : <FaShoppingCart />
+
+           }
+           {
+                !isOrdered ? "Add To Cart" : "View Cart"
+           }
         </button>
     </div>
   )
