@@ -38,9 +38,9 @@ function SectionFive() {
                 <h1 className="text-gray-400">UX Designer</h1>
               </div>
             </div>
-            <div className="-pt-16 flex gap-10 text-[1.5em] opacity-25">
-              <i class="fa-solid fa-arrow-left"></i>
-              <i class="fa-solid fa-arrow-right"></i>
+            <div className="-pt-10 pr-16  flex gap-10 text-[1.5em] ">
+              <i class="fa-solid fa-arrow-left opacity-25 hover:opacity-100"></i>
+              <i class="fa-solid fa-arrow-right opacity-25 hover:opacity-100"></i>
             </div>
           </div>
         </div>
@@ -70,9 +70,9 @@ function SectionFive() {
                 <h1 className="text-gray-400">UX Designer</h1>
               </div>
             </div>
-            <div className="flex text-[1.4em] opacity-25">
-              <i class="fa-solid fa-arrow-left"></i>
-              <i class="fa-solid fa-arrow-right"></i>
+            <div className="-pt-10 pr-16  flex gap-10 text-[1.5em]">
+              <i class="fa-solid fa-arrow-left opacity-25 hover:opacity-100"></i>
+              <i class="fa-solid fa-arrow-right opacity-25 hover:opacity-100"></i>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 
 
+import SectionSix from "../Components/sectionSix";
 import SectionFive from "../Components/sectionFive";
 import SectionFour from "../Components/sectionFour";
 import SectionFour2 from "../Components/SectionFour2";
@@ -18,6 +19,7 @@ function Home() {
     {/* <SectionFour/> */}
     <SectionFour2 />
     <SectionFive/>
+    <SectionSix/>
 
     </div>
   )
