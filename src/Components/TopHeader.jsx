@@ -1,6 +1,6 @@
 export default function TopHeader() {
   return (
-    <div className="bg-black text-white text-sm py-3 px-4 flex justify-between items-center">
+    <div className="bg-black text-white text-sm py-3 px-4 flex justify-between items-center ">
         <div className="w-48">
             <img src="https://public-assets.envato-static.com/assets/logos/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg" alt="" />
         </div>
