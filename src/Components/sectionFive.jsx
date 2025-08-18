@@ -1,5 +1,5 @@
-import testmonial1 from ".././assets/testimonial-3.jpg";
-import man from ".././assets/man-airpods.jpg";
+import testmonial1 from "../assets/testimonial-3.jpg";
+import man from "../assets/man-airpods.jpg";
 import shape1 from "../assets/shape1.png";
 import shape2 from "../assets/shape2.png";
 import watchFront from "../assets/watch-front-home.png";
@@ -17,20 +17,20 @@ function SectionFive() {
 
         <div className="relative z-10">
           <h1 className="absolute left-[480px] top-16 text-[5em] opacity-10 z-0">
-            <i class="fa-solid fa-quote-right"></i>
+            <i className="fa-solid fa-quote-right"></i>
           </h1>
 
           <p className="text-[2em] font-extrabold pl-10 ">
             This watch is amazing! <br /> affordable price.
           </p>
           <p className="text-[1.2em] text-gray-500 pt-5 pl-10 leading-10">
-            "I don't always clop, but when i do, it's because of pear watch.{" "}
-            <br /> pear watch has really heappened me. I SRTONGLY recomended.{" "}
-            <br /> pear watch to EVERTONE interested in fashion & tech! thi is{" "}
-            <br /> simply unbeleivable!"
+            "I don't always clop, but when I do, it's because of pear watch.{" "}
+            <br /> Pear watch has really helped me. I STRONGLY recommend.{" "}
+            <br /> Pear watch to EVERYONE interested in fashion & tech! This is{" "}
+            <br /> simply unbelievable!"
           </p>
 
-          <div className="flex  items-center justify-between">
+          <div className="flex items-center justify-between">
             <div className="flex gap-5 pt-5 items-center ml-8">
               <img className="rounded-full w-20" src={testmonial1} alt="" />
               <div>
@@ -38,45 +38,14 @@ function SectionFive() {
                 <h1 className="text-gray-400">UX Designer</h1>
               </div>
             </div>
-            <div className="-pt-10 pr-16  flex gap-10 text-[1.5em] ">
-              <i class="fa-solid fa-arrow-left opacity-25 hover:opacity-100"></i>
-              <i class="fa-solid fa-arrow-right opacity-25 hover:opacity-100"></i>
-            </div>
-          </div>
-        </div>
-
-        {/* testmonial 2 */}
-
-        <div className="relative z-10 hidden">
-          <h1 className="absolute left-[480px] top-16 text-[5em] opacity-10 z-0">
-            <i class="fa-solid fa-quote-right"></i>
-          </h1>
-
-          <p className="text-[2em] font-extrabold pl-10 ">
-            This watch is amazing! <br /> affordable price.
-          </p>
-          <p className="text-[1.2em] text-gray-500 pt-5 pl-10 leading-10">
-            "I don't always clop, but when i do, it's because of pear watch.{" "}
-            <br /> pear watch has really heappened me. I SRTONGLY recomended.{" "}
-            <br /> pear watch to EVERTONE interested in fashion & tech! thi is{" "}
-            <br /> simply unbeleivable!"
-          </p>
-
-          <div className="flex items-center">
-            <div className="flex gap-5 pt-5 items-center ml-8">
-              <img className="rounded-full w-20" src={testmonial1} alt="" />
-              <div>
-                <h1 className="font-bold text-[1.3em]">John Carter</h1>
-                <h1 className="text-gray-400">UX Designer</h1>
-              </div>
-            </div>
-            <div className="-pt-10 pr-16  flex gap-10 text-[1.5em]">
-              <i class="fa-solid fa-arrow-left opacity-25 hover:opacity-100"></i>
-              <i class="fa-solid fa-arrow-right opacity-25 hover:opacity-100"></i>
+            <div className="pr-16 flex gap-10 text-[1.5em]">
+              <i className="fa-solid fa-arrow-left opacity-25 hover:opacity-100"></i>
+              <i className="fa-solid fa-arrow-right opacity-25 hover:opacity-100"></i>
             </div>
           </div>
         </div>
       </div>
+
 
       <div className="relative">
         <img
@@ -84,14 +53,13 @@ function SectionFive() {
           src={man}
           alt=""
         />
-        <img
-          className=" w-[250px] rounded-3xl absolute right-[270px] top-[310px] z-20 h-[200px]"
-          src={watchFront}
-          alt=""
-        />
+
+        <img src={watchFront} alt="watch front"  className="w-[250px] h-[200px] rounded-3xl absolute right-[270px] top-[310px] z-20 animate-anima" />
+
         <img className="absolute left-20 top-16 z-0" src={shape2} alt="" />
       </div>
     </div>
   );
 }
+
 export default SectionFive;

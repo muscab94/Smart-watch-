@@ -15,9 +15,9 @@ function SectionThree(){
                 <p className="text-center  text-white pt-20">A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen <br /> interface for daily use, while an associated smartphone app provides for management and telemetry (such as long- <br /> term biomonitoring)</p>
 
                 <div className="flex justify-center gap-20 pt-16">
-                   <div className=" relative ">
-                    <div className="bg-white  rounded-full py-12 px-12 "></div>
-                     <img className="absolute top-5 left-7 " src={location} alt="" />
+                   <div className=" relative  ">
+                    <div className="bg-white  rounded-full py-12 px-12  hover:animate-anima2 "></div>
+                     <img className="absolute top-5 left-7  " src={location} alt="" />
                      <h1 className="text-white pt-4">Water proof</h1>
                    </div>
 
