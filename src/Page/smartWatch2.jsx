@@ -22,9 +22,11 @@ function SmartWatch2() {
     fetchData();
   }, []);
 
-  // Filter only custom watches (case-insensitive)
+  // Filter: only custom watches
   const filteredProducts = data.filter(
-    (product) => product.category.toLowerCase() === "custom"
+    (product) =>
+      product.category &&
+      product.category.toLowerCase().includes("custom")
   );
 
   return (
@@ -32,20 +34,27 @@ function SmartWatch2() {
       <div className="mb-5 flex justify-between items-center">
         <div className="font-bold text-5xl">
           <h1 className="mb-2">Custom Watches</h1>
-          <p className="fon-thin text-lg">
+          <p className="font-thin text-lg">
             Showing Custom {filteredProducts.length} result
           </p>
         </div>
       </div>
 
       <div className="grid grid-cols-4 gap-5">
-        {filteredProducts.map((product) => (
-          <Product key={product.watchId} product={product} />
-        ))}
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product) => (
+            <Product key={product.watchId} product={product} />
+          ))
+        ) : (
+          <p className="col-span-4 text-center text-gray-500 text-lg">
+            No custom watches found.
+          </p>
+        )}
       </div>
     </div>
   );
 }
 
 export default SmartWatch2;
+
 
