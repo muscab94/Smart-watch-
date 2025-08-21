@@ -30,9 +30,10 @@ export default function MainHeader() {
         {/* Menu */}
         <ul className="hidden text-[17px] md:flex space-x-6 -ml-[30px] text-gray-700 font-medium relative">
           <NavLink to="/"><li>Home</li></NavLink>
-          <li className="relative cursor-pointer" onMouseEnter={() => setCol(true)} onMouseLeave={() => setCol(false)}> Collections <i className="fa-solid fa-angle-down pl-2"></i> <Collection show={col} /> </li>
-          <NavLink to="/Watches"><li>Watches</li></NavLink>
-          <li className="relative cursor-pointer" onMouseEnter={() => setShowQuick(true)}  onMouseLeave={() => setShowQuick(false)}>Quick find <i className="fa-solid fa-angle-down"></i>  <Quick show={showQuick} /></li> <li className="relative cursor-pointer" onMouseEnter={() => setShowPages(true)} onMouseLeave={() => setShowPages(false)}> Pages <i className="fa-solid fa-angle-down"></i> <Pages show={showPages} /></li>
+          <li className="relative cursor-pointer text-gray-400 hover:text-black" onMouseEnter={() => setCol(true)} onMouseLeave={() => setCol(false)}> Collections <i className="fa-solid fa-angle-down pl-2"></i> <Collection show={col} /> </li>
+          <NavLink to="/Watches"><li className="text-gray-400 hover:text-black">Watches</li></NavLink>
+          <li className="relative cursor-pointer text-gray-400 hover:text-black" onMouseEnter={() => setShowQuick(true)}  onMouseLeave={() => setShowQuick(false)}>Quick find <i className="fa-solid fa-angle-down"></i>  <Quick show={showQuick} /></li> 
+          <li className="relative cursor-pointer text-gray-400 hover:text-black" onMouseEnter={() => setShowPages(true)} onMouseLeave={() => setShowPages(false)}> Pages <i className="fa-solid fa-angle-down"></i> <Pages show={showPages} /></li>
         </ul>
 
         {/* Buttons */}

@@ -64,6 +64,25 @@ export default {
 		},
         },
 
+       anima3: {
+      "0%" : {
+        transform: "translateX(-100%)"
+      },
+      "100%" : {
+        transform: "translateX(0)"
+      },
+    },
+      anima4: {
+         "0%" : {
+        transform: "translateX(100%)"
+      },
+      "100%" : {
+        transform: "translateX(0)"
+      },
+       
+    },
+    
+
 		//   anima2: {
         //   "0%": { transform: "skewX(0deg)" },
 		//   "25%": { transform: "skewX(90deg)" },
@@ -74,6 +93,8 @@ export default {
       },
       animation: {
         anima: " anima 2s ease-in-out infinite",
+        anima3: "anima3 1s linear forwards",
+        anima4: "anima4 1s linear forwards",
 		// anima2: "skew360 0.5s ease-in-out forwards"
       },
       borderRadius: {
