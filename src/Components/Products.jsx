@@ -47,7 +47,7 @@ function Products() {
                         <option value="sports">Sports</option>
                         <option value="classic">Classic</option>
                         <option value="modern">Modern</option>
-                        <option value="custom">Custom</option>
+                        <option value="uncategorized">Custom</option>
                         <option value="Best Sellers">Best Sellers</option>
                     </select>
                 </div>

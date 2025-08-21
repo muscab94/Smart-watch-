@@ -26,7 +26,7 @@ function Custom() {
   const filteredProducts = data.filter(
     (product) =>
       product.category &&
-      product.category.toLowerCase().includes("custom")
+      product.category.toLowerCase().includes("uncategorized")
   );
 
   return (

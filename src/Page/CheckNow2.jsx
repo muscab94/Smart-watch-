@@ -21,7 +21,7 @@ function CheckNow2() {
   }, []);
 
   const filteredProducts = data.filter(
-    (product) => product.category.toLowerCase() === "custom"
+    (product) => product.category.toLowerCase() === "uncategorized"
   );
 
   return (
