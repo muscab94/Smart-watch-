@@ -7,13 +7,13 @@ import Quick from "../Page/Quick";
 import Pages from "../Page/pages";
 
 export default function MainHeader() {
-  const products = useSelector((state) => state.cart.products);
+  const products = useSelector((state) => state.cart.products)
 
-  const [col, setCol] = useState(false);
+  const [col, setCol] = useState(false)
 
   const [showQuick, setShowQuick]= useState(false)
 
-  const [showPages, setShowPages] = useState(false);
+  const [showPages, setShowPages] = useState(false)
 
   return (
     <div className="w-full shadow-md relative">
